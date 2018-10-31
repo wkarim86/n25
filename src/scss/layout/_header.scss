@@ -1,0 +1,73 @@
+.header{
+    height : 980px;
+    width  : 100%;
+    background: url('../image/shutterstock_656176387.jpg') no-repeat;
+    color: $color-white;
+    @include position(relative);
+
+    h3{
+        color: $color-white;
+        font-family: 'Helvetica Neue Bold';
+        letter-spacing: -5px;        
+    }
+    p{
+        font-family: 'Helvetica Neue';
+        font-size: pixeltorem(20);
+        margin-top:30px;
+    }
+
+    .service-list{
+        list-style: none;
+        font-family: 'Helvetica Neue';
+        margin:0px;
+        padding:0px;
+        h3{
+            margin:0px 0px 20px 0px;
+            text-transform: uppercase;               
+            letter-spacing: 3px;    
+            font-size: pixeltorem(24);
+
+        }
+        li{            
+            margin-bottom:36px;
+            line-height:36px;
+            display:flex;
+            align-items: center;      
+            
+            i{
+                margin-right:15px;
+            }
+        }
+    }
+
+    .scroll-down{
+        width:70px;
+        height: 90px;        
+        margin:auto;
+        @include position(relative,3);
+        overflow: hidden;
+        margin-top:88px;
+        
+
+        .arrow{
+            @include flex;
+            @include flex-align(center,center);
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            border:3px solid $color-white;
+            i{
+                color:$color-white;
+            }
+        }
+
+        .line{
+            width:3px;
+            background:$color-white;
+            height:100%;
+            margin:auto;
+
+        }
+
+    }
+}

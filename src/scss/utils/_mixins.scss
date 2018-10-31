@@ -1,0 +1,4 @@
+@mixin position($pos, $zIndex: 1){
+    position : map-get($div-positions, $pos);
+    z-index: $zIndex;
+}

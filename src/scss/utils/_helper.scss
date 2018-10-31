@@ -1,0 +1,13 @@
+@import '../base/colors';
+%white-link{
+    color: $color-white;
+    text-decoration:none;
+}
+
+%font-helvetica-regular{
+    font-family: "Helvetica Neue";    
+}
+
+%font-helvetica-bold{
+    font-family: "Helvetica Neue Bold";    
+}

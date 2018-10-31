@@ -1,0 +1,6 @@
+/************ Pixel 2 Rem converter ***************/
+@function pixeltorem($px, $factor : 1.0){
+    $base: 16;
+    $size : ($px / $base) * $factor;
+    @return #{$size}rem;
+}

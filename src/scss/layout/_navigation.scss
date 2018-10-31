@@ -1,0 +1,16 @@
+.navigation-home{
+    margin-top:130px;
+    ul{
+        margin:0px;
+        padding:0px;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        li{
+            a{
+               @extend %white-link;
+               font-family: 'Helvetica Neue Bold';
+            }
+        }
+    }
+}

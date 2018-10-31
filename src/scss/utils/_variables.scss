@@ -1,0 +1,21 @@
+$font-sizes : (
+    140 : pixeltorem(140),
+    90  : pixeltorem(90),
+    80  : pixeltorem(80),
+    75  : pixeltorem(75),
+    60  : pixeltorem(60),
+    40  : pixeltorem(40),
+    38  : pixeltorem(38),
+    36  : pixeltorem(36),
+    24  : pixeltorem(24),
+    22  : pixeltorem(22),
+    20  : pixeltorem(20),
+    18  : pixeltorem(18),
+    14  : pixeltorRem(14),
+);
+
+$div-positions: (
+    "absolute" : absolute,
+    "relative" : relative,
+    "fixed"    : fixed
+);
