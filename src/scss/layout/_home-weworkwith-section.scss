@@ -1,0 +1,21 @@
+.we-work-with{
+    height: 634px;
+    background: url('../image/we-work-with.jpg') no-repeat;
+    background-size: cover;
+    @include position(relative);
+
+    .icon-carousel{
+        position:absolute;
+        z-index: 2;
+        width:100%;
+        height: 100%;
+        top:0px;        
+
+        & > div{
+            @include flex;
+            @include flex-align(center,center);
+            height:100%;
+            @include flex-direction(column);
+        }
+    }
+}

@@ -3,9 +3,22 @@
 @import 'utils/helper';
 @import 'utils/flexbox';
 @import 'utils/mixins';
+@import 'utils/animation';
 @import 'base/base';
 @import 'base/colors';
 @import 'base/typography';
 
+
+/*---- Components --- */
+@import 'components/buttons';
+@import 'components/icon-slider';
+@import 'components/navigation';
+@import 'components/project-slider';
+@import 'components/separators';
+
+
 /*---- Partials ------*/
 @import 'pages/home';
+
+/*----- Overrides ----*/
+@import 'utils/override';

@@ -1,0 +1,47 @@
+.icon-carousel{
+
+
+    .icon-slider{
+        width:80vw;
+        overflow: hidden;
+        height:142px;
+        
+        .slides{        
+            height: 142px; 
+            @include position(relative);  
+            background: $color-white;    
+            display:block;
+            margin:0 35px;
+            
+        }
+        
+    
+        picture{  
+            @include flex;
+            @include flex-align(center, center);
+            height:142px;
+            img{
+                height:100px;
+                display:block;
+                
+            }
+        }
+    
+    }
+
+    .arrow{
+        @include position(absolute,9);
+        height:80px;
+        width:44px;
+        top:55%;
+        
+        &.next{
+            right:5%;
+        }
+
+        &.prev{
+            left: 5%;
+        }
+    }
+
+}

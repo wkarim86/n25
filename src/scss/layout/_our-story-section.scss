@@ -1,0 +1,30 @@
+.our-story{
+    
+    .heading2{
+        display: block;
+        z-index: 2;
+        background:$color-white;
+        @include position(relative);
+        max-width:410px;
+        padding:0 10px;
+    }
+
+    p{
+        width:90%;        
+    }
+
+    .v-line{
+        height:3px;
+        width:100%;
+        background:$color-complimentry;
+        @include position(absolute);
+        top:180px;
+        left:0px;
+    }
+
+    .degree{
+        @include position(absolute,2);
+        left:0px;
+        top:24%;
+    }
+}

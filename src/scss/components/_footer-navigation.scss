@@ -1,0 +1,17 @@
+.footer-navigation{
+    list-style: none;
+    padding:0px 10px;
+    background:$color-secondary;
+
+    li{
+        display:inline-block;
+        margin:0px 20px;
+    }
+
+    a{
+        color:$color-white;
+        @extend %font-helvetica-regular;
+        font-size:pixeltorem(20);
+        display:block;
+    }
+}

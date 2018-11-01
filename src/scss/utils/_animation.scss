@@ -1,0 +1,24 @@
+.bgfadeOut{
+    -webkit-animation: fadeOutBg 1s; /* Safari 4+ */
+    -moz-animation:    fadeOutBg 1s; /* Fx 5+ */
+    -o-animation:      fadeOutBg 1s; /* Opera 12+ */
+    animation:         fadeOutBg 1s; /* IE 10+, Fx 29+ */
+}
+
+
+@-webkit-keyframes fadeOutBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadeOutBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fadeOutBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeOutBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }

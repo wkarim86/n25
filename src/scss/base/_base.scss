@@ -4,7 +4,7 @@ body, html{
     margin:0px;
 }
 
-.noth25-container{
+.north25-container{
     margin:auto;
     @include position(relative,2);
     width:100%;
@@ -25,4 +25,18 @@ body, html{
 .bgcover{
     background-size:cover;
     background-repeat:no-repeat;
+}
+
+.container-padding-160{
+    padding:160px 0px;
+}
+
+a{
+    text-decoration:none;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        text-decoration: none;
+    }
 }

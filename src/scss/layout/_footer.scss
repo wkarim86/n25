@@ -1,0 +1,61 @@
+@import '../components/footer-navigation';
+footer{
+    height:330px;
+    background:$color-secondary;
+    background-image: url('../image/c.png');
+    background-repeat:no-repeat;
+    background-position:70% bottom;
+    .footer-logo{
+        width:270px;
+        display: block;
+        background:$color-secondary;
+    }
+
+    .social-icons{
+        display:flex;
+        background:$color-secondary;
+        margin:0px;
+        padding:0px;
+        li{
+            height:36px;
+            width:36px;        
+            background:$color-white;
+            border-radius:36px;
+            list-style: none;
+            margin:0 10px;
+    
+            a{
+                display:block;
+                width:36px;
+                height:36px;
+                line-height:36px;
+                text-align:center;
+                font-size:20px;
+                transition: all .5s ease-in-out;
+                color:$color-secondary;
+            
+                 &:hover{
+                     color:$color-primary;
+                 }
+            }
+        }
+    }
+
+    .copyright{
+        @include position(absolute);
+        color: $footer-text-color;
+        @extend %font-helvetica-regular;
+        font-size:pixeltorem(14);
+        bottom:10%;
+        width:100%;
+        text-align:center;
+    }
+
+    a{
+        color: $footer-text-color;
+        @extend %font-helvetica-regular;  
+        &:hover{
+            color:$color-white;
+        }
+    }
+}
