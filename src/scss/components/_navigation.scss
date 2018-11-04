@@ -7,9 +7,18 @@
         justify-content: space-between;
         list-style: none;
         li{
+            @include position(relative,1);            
             a{
+               @include position(relative,100);
                @extend %white-link;
                font-family: 'Helvetica Neue Bold';
+               padding:0px 30px;
+            }
+           
+            &:hover{
+                & > .dropdown{
+                    transform: scaleY(1);
+                }
             }
         }
     }
