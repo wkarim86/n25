@@ -1,4 +1,4 @@
-.dropdown{
+.sub-menu{
     @include position(absolute, 99);
     padding:50px 30px 20px 30px;
     top:-40px;
@@ -7,10 +7,11 @@
     transform: scaleY(0);
     transition: all .2s ease-out;
     transform-origin: top;
-    ul{
-        @include flex;
-        @include flex-direction(column);
-        margin-top:40px;
+    opacity: 0;
+    @include flex;
+    @include flex-direction(column);
+     margin-top:40px;
+        
         li{
             @include flex;
             @include flex-align(space-between,center);
@@ -25,8 +26,7 @@
             }
           
         }
-    }
-
+    
     &.open{
         transform: scaleY(1);
     }

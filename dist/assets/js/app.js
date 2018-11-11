@@ -21,6 +21,8 @@ $(function(){
         prevArrow: $('.icon-carousel .prev'),
         nextArrow: $('.icon-carousel .next')
     });
+
+ 
     
 });
 
@@ -31,7 +33,12 @@ function imagetoBackground(){
         $(this).hide();
         let src = $(this).attr("src");
         let target = $(this).data("target");
-        $(this).parent().addClass('bgcover').css({'background' : 'url("' + src+ '")'});
+        if($(this).parent()[0].tagName == "DIV"){
+            $(this).parent().addClass('bgcover').css({'background-image' : 'url("' + src+ '")'});
+        }else{
+            $(this).parent().parent().addClass('bgcover').css({'background-image' : 'url("' + src+ '")'});
+        }
+        
         
     });
 }
@@ -64,3 +71,49 @@ function setSliderThumb(index){
 
     
 }
+
+
+/* background animation */
+function animateBg(){
+    // Initial state
+var scrollPos = 0;
+// adding scroll event
+window.addEventListener('scroll', function(){
+  // detects new state and compares it with the new one
+  if ((document.body.getBoundingClientRect()).top > scrollPos)
+		$('svg image').css({'top' : document.body.getBoundingClientRect().top});
+	else
+    $('svg image').css({'top' : scrollPos});
+	// saves the new position for iteration.
+	scrollPos = (document.body.getBoundingClientRect()).top;
+});
+}
+
+
+ /* Toggle Menu */
+ $(".hamburger").click(function(){
+     var toggle = $(this).data("counter") || 0;
+    $(this).toggleClass("is-active");
+    if(toggle == 0){
+        $('.nav').addClass('open');
+        $('.mobile-navigation').css({"transform" : "scaleX(1)"});
+        $(this).data("counter",1);
+    }else{
+        $('.mobile-navigation').css({"transform" : "scaleX(0)"});
+        $('.nav').removeClass('open');
+        $(this).data("counter",0);        
+    }
+    
+    
+  });
+
+
+  /* Sticky Menu Event */
+  $(window).scroll(function(){
+      var target = $('#header').height();
+      if($(this).scrollTop() > target){
+          $('.sticky').addClass('show');          
+      }else{
+        $('.sticky').removeClass('show');
+      }
+  })

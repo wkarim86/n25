@@ -1,7 +1,6 @@
 .header{
     height : 980px;
-    width  : 100%;
-    background: url('../image/shutterstock_656176387.jpg') no-repeat;
+    width  : 100%;    
     color: $color-white;
     @include position(relative);
 
@@ -33,6 +32,10 @@
             line-height:36px;
             display:flex;
             align-items: center;      
+            a {
+                color:$color-white;
+                text-decoration: none;
+            }
             
             i{
                 margin-right:15px;

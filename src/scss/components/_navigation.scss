@@ -1,25 +1,120 @@
 .navigation-home{
     margin-top:130px;
-    ul{
-        margin:0px;
-        padding:0px;
+ 
+}
+
+
+.nav{
+    background:$color-secondary;
+    @include flex;
+    min-width:264px;
+    box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+    @include flex-align(space-between, null);
+
+    .column-1{
+        padding:20px;
+        @include flex;
+        @include flex-align(null, center);
+        border-right:1px solid $color-secondary;
+        border-top:1px solid $color-secondary;
+        border-bottom:1px solid $color-secondary;
+    }
+
+    .column-2{
+        padding: 20px;
+        background:$color-white;
+        border-right:1px solid $nav-border-color;
+        border-top:1px solid $nav-border-color;
+        border-bottom:1px solid $nav-border-color;
+    }
+
+    .logo-small{
+        width:133px;
+    }
+
+    &.open{        
+        .mobile-navigation{
+            display:block;
+        }
+
+        .column-1{
+            width:90vw;
+        }
+    }
+
+
+}
+
+.sticky{
+    @include position(fixed,999);
+    top:100px;
+    left:0px;
+    display: none;
+
+    &.show{
         display:flex;
-        justify-content: space-between;
-        list-style: none;
+    }
+
+}
+
+.mobile-navigation{    
+    transition: all .1s ease-in-out;
+    transform: scaleX(0);
+    display: none;
+
+    .main-nav{
         li{
-            @include position(relative,1);            
             a{
-               @include position(relative,100);
-               @extend %white-link;
-               font-family: 'Helvetica Neue Bold';
-               padding:0px 30px;
+                font-size:pixeltorem(20); 
             }
-           
-            &:hover{
-                & > .dropdown{
-                    transform: scaleY(1);
+
+             
+        &:hover{
+            & > .sub-menu{
+                transform: scaleY(1);
+                opacity: 1;
+
+                li{
+                    a{
+                        font-size:pixeltorem(16);
+                    }
+                }
+            }
+        }
+            
+        }
+    }
+}
+
+ul.main-nav{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    li{
+        @include position(relative,1);            
+        a{
+           @include position(relative,100);
+           @extend %white-link;
+           font-family: 'Helvetica Neue Bold';
+           padding:0px 30px;
+           font-size:pixeltorem(30);
+        }
+       
+        &:hover{
+            & > .sub-menu{
+                transform: scaleY(1);
+                opacity: 1;
+
+                li{
+                    a{
+                        font-size:pixeltorem(20);
+                    }
                 }
             }
         }
     }
 }
+
+
