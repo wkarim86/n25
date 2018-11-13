@@ -1,0 +1,75 @@
+@import "../layout/pages";
+/* About North 25 Page */
+.ourvision-label{
+    @include position(relative);
+    h3{ 
+        width:202px;            
+        font-family: 'Helvetica Neue Bold';
+        font-size:pixeltorem(24);
+        color:$color-white;            
+        margin:auto;
+        text-align:center;
+        background:$color-secondary;
+        border:10px solid $color-white;
+        text-transform: uppercase;
+        line-height:45px;
+        @include position(relative,2);
+        letter-spacing: -1px;
+        
+    }
+
+    .v-line{
+        z-index: 1;
+        background:$color-complimentry;
+        top:50%;
+    }
+    
+}
+
+.center-label{
+    width:100%;
+    @include position(relative);
+}
+
+.quote{
+    margin:60px 0;
+}
+
+.boxes{
+
+    .box{
+        min-height:500px;
+        p{
+            font-family: 'Helvetica Neue Regular';
+            font-size:pixeltorem(60);
+            line-height:pixeltorem(60);
+            text-indent: 28px;
+        }
+
+       
+    }
+
+    .col{
+        .label{
+            background:$color-primary;
+            width:100%;
+            text-align:center;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue Regular';
+            font-size:pixeltorem(22);
+            padding:30px 0px;
+            display: block;
+            margin-bottom:70px;
+        }
+    }
+    
+    .col, .heading1{
+        color:$color-white;
+        margin-bottom: 0px;
+    }
+    
+    .col:nth-child(2){
+        border-right:1px solid rgba(255,255,255,0.15);
+        border-left:1px solid rgba(255,255,255,0.15);
+    }
+}

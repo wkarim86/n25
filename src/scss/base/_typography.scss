@@ -46,6 +46,7 @@
 .heading1{
     @extend %font-helvetica-bold;
     font-size: pixeltorem(140);
+    line-height: pixeltorem(140);
     color: $color-secondary;
     letter-spacing: -4px;
     margin-bottom:30px;
@@ -60,6 +61,7 @@
     letter-spacing: -4px;
     margin-bottom:30px;
 }
+
 
 .heading-white{    
     @extend %font-helvetica-bold;

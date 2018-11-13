@@ -1,0 +1,34 @@
+.page{
+    .sticky{
+        display:flex;
+    }
+    .page-header{
+        .heading2{
+            margin-bottom:30px;
+        }
+        article{
+            padding-top:240px;
+            padding-bottom:80px;
+            p{
+                margin:pixeltorem(30) 0px;                
+            }
+        }
+    }
+
+    .page-image{
+        picture{
+            width:100%;
+            height:254px;
+            overflow: hidden;
+        }
+    }
+
+    p{
+        color:$color-text;
+    }
+
+    .v-line{       
+        background:$color-complimentry;
+    }
+
+}

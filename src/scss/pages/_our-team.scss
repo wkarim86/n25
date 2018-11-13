@@ -1,0 +1,32 @@
+@import "../layout/pages";
+/* OUr Team Page */
+.page-our-team{
+    .team{
+        .v-line{
+            top:30%;
+            background: #EAEAEA;
+        }
+
+        h3{
+            font-family: 'Helvetica Neue Bold';
+            font-size: pixeltorem(70);
+            line-height: pixeltorem(70);
+            margin:0px;
+            color:$color-primary;     
+            background:$color-white;   
+            z-index: 2; 
+            padding-right:30px;
+            display:inline;   
+        }
+
+        h4{
+            font-family: 'Helvetica Neue Bold';
+            font-size: pixeltorem(36);
+            margin:0px;
+            color:$color-secondary;  
+            margin-bottom:30px;          
+        }
+
+
+    }
+}

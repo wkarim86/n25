@@ -17,10 +17,17 @@
 @import 'components/separators';
 @import 'components/dropdown-menu';
 @import 'components/hamburger-menu';
-
+@import 'components/spacer';
+@import 'components/avatar';
 
 /*---- Partials ------*/
 @import 'pages/home';
+@import 'pages/about-north25';
+@import 'pages/ceo-message';
+@import 'pages/our-team';
+@import 'pages/our-work';
+@import 'pages/our-services';
+@import 'pages/media-hub';
 
 /*----- Overrides ----*/
 @import 'utils/override';

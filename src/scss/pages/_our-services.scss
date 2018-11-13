@@ -1,0 +1,39 @@
+@import "../layout/pages";
+/* Our Services Page */
+.page-our-services{
+
+    .service-description{
+        padding:140px 70px 0px 70px;
+        
+    }
+
+    .service-list{
+        list-style: none;
+        padding:0px;
+        margin:0px;
+        li, a{
+            font-family: 'Helvetica Neue Bold';
+            letter-spacing: -1px;
+            color:$color-secondary;
+            text-decoration: none;
+            line-height:pixeltorem(50);
+
+            i{
+                padding-right:20px;
+                color:$color-primary;
+            }
+        }
+    }
+
+    
+    .services-slider-control{
+        @include position(absolute);
+        right:15%;
+        top:180px;
+
+        .slick-disabled{
+            opacity:0.10;
+        }
+    }
+   
+}

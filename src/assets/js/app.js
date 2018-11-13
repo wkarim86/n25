@@ -23,7 +23,7 @@ $(function(){
     });
 
  
-    
+    servicesSlider();
 });
 
 
@@ -72,6 +72,25 @@ function setSliderThumb(index){
     
 }
 
+/* Setup Services Slider */
+function servicesSlider(){
+    var serviceSlider = $('.services-slider').slick({  
+        infinite: false,      
+        prevArrow: $('.services-slider-control .prev'),
+        nextArrow: $('.services-slider-control .next')
+    });
+
+    $('.services-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.service-icons').find('li').removeClass('active');
+            $('.service-icons').find('li').eq(nextSlide).addClass('active');
+      });
+
+      $('.service-icons li a').on('click', function(){
+          console.log(parseInt($(this).parent().index()));
+        $('.services-slider').slick('slickGoTo',parseInt($(this).parent().index()));   
+      })
+}
+
 
 /* background animation */
 function animateBg(){
@@ -95,11 +114,9 @@ window.addEventListener('scroll', function(){
      var toggle = $(this).data("counter") || 0;
     $(this).toggleClass("is-active");
     if(toggle == 0){
-        $('.nav').addClass('open');
-        $('.mobile-navigation').css({"transform" : "scaleX(1)"});
+        $('.nav').addClass('open');        
         $(this).data("counter",1);
     }else{
-        $('.mobile-navigation').css({"transform" : "scaleX(0)"});
         $('.nav').removeClass('open');
         $(this).data("counter",0);        
     }

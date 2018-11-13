@@ -1,0 +1,16 @@
+.avatar{
+    @include position(relative,2);
+    border:10px solid $color-white;
+    picture{
+        padding:40px;
+        border:3px solid $color-primary;
+        background: $color-white;
+        max-width:360px;
+        overflow: hidden;
+        display: block;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
