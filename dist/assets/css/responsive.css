@@ -10,7 +10,13 @@
 @media (min-width: 1200px) {
   .north25-container {
     max-width: 1140px; } }
-@media (min-width: 1366px) {
+@media (min-width: 1366px) and (max-width: 1439.98px) {
+  .north25-container {
+    max-width: 1266px; } }
+@media (min-width: 1440px) and (max-width: 1679.98px) {
+  .north25-container {
+    max-width: 1340px; } }
+@media (min-width: 1920px) {
   .north25-container {
     max-width: 1644px; } }
 

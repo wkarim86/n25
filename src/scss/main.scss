@@ -21,6 +21,7 @@
 @import 'components/avatar';
 
 /*---- Partials ------*/
+@import 'layout/pages';
 @import 'pages/home';
 @import 'pages/about-north25';
 @import 'pages/ceo-message';
@@ -28,6 +29,9 @@
 @import 'pages/our-work';
 @import 'pages/our-services';
 @import 'pages/media-hub';
+@import 'pages/contact';
+@import 'pages/our-projects';
+@import 'pages/project-detail';
 
 /*----- Overrides ----*/
 @import 'utils/override';

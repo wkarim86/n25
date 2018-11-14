@@ -1,0 +1,10 @@
+.page-contact{
+    address{
+        @extend %font-helvetica-regular;
+        font-size:pixeltorem(28);
+
+        strong, b{
+            @extend %font-helvetica-bold;
+        }
+    }
+}

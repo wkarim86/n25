@@ -3,6 +3,7 @@
     width  : 100%;    
     color: $color-white;
     @include position(relative);
+    transition: all .2s linear;
 
     h3{
         color: $color-white;
@@ -72,5 +73,12 @@
 
         }
 
+    }
+
+    .header-overlay-shade{
+        @include position(absolute);
+        width:100%;
+        height:100%;
+        background: rgba(0,0,0,0.5);
     }
 }

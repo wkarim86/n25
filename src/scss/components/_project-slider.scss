@@ -1,6 +1,6 @@
 .project-slider{    
     overflow: hidden;
-    height:840px;
+    height:840px;    
     picture{
         @include position(relative);
         overflow-x: hidden;        
@@ -28,6 +28,15 @@
 
         &.prev{
             left:60px;
+        }
+
+        img{
+            position: relative;
+            display: block;
+            margin: auto;
+            margin-top: -27px;
+            top: 50%; 
+            width:30px;
         }
        
     }

@@ -3,10 +3,10 @@ ul.main-nav li a {
   color: #FFF;
   text-decoration: none; }
 
-.paragrah, .degree, .label-prop-small, .label-prop-amenities li, .footer-navigation a, footer .copyright, footer a, .page-media-hub .media-articles ul li .post-date {
+.paragrah, .degree, .label-prop-small, .label-prop-amenities li, .footer-navigation a, footer .copyright, footer a, .page-media-hub .media-articles ul li .post-date, .page-contact address, .page-our-projects .projects .label-prop-small, .page-our-projects .projects .label-prop-amenities li, .page-project-detail .project-amenities li, .page-project-detail .project-tiny-info-container .project-tiny-info li span, .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
   font-family: "Helvetica Neue"; }
 
-.heading1, .heading2, .heading-white, .north25-btn-primary, .north25-btn-secondary, .label-prop-price, .label-prop-title, .service-icons li h3, .page-media-hub .media-articles ul li .post-title {
+.heading1, .heading2, .heading3, .heading4, .heading-white, .north25-btn-primary, .north25-btn-secondary, .label-prop-price, .label-prop-title, .service-icons li h3, .page-media-hub .media-articles ul li .post-title, .page-contact address strong, .page-contact address b, .page-our-projects .projects .filters li a, .page-our-projects .projects .label-prop-price, .page-our-projects .projects .label-prop-title, .page-project-detail .project-tiny-info-container .project-tiny-info li h3 {
   font-family: "Helvetica Neue Bold"; }
 
 .bgfadeOut {
@@ -50,7 +50,8 @@ ul.main-nav li a {
   src: url(../fonts/HelveticaNeue-Medium-11.otf); }
 body, html {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  transition: all .1s ease-in-out; }
 
 .north25-container {
   margin: auto;
@@ -78,11 +79,13 @@ body, html {
   padding: 160px 0px; }
 
 a {
+  color: #000;
   text-decoration: none; }
   a:focus {
     outline: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #BA8748; }
 
 .svg-defs {
   width: 100%;
@@ -104,6 +107,10 @@ a {
   padding-left: 0px;
   padding-top: 0px;
   padding-bottom: 0px; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
 
 .font-140 {
   font-size: 8.75rem;
@@ -154,28 +161,43 @@ a {
   letter-spacing: -4px;
   margin-bottom: 30px; }
 
+.heading3 {
+  font-size: 3.125rem;
+  color: #000;
+  letter-spacing: -4px;
+  margin-bottom: 30px; }
+
+.heading4 {
+  font-size: 3.125rem;
+  color: #000;
+  letter-spacing: -1px;
+  margin-bottom: 30px; }
+
 .heading-white {
   font-size: 5.625rem;
   color: #FFF;
-  letter-spacing: -1px;
   margin-bottom: 30px; }
 
 .paragrah {
   font-size: 1.125rem;
   color: #888888; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 /*---- Components --- */
 .north25-btn-primary, .north25-btn-secondary {
   font-size: 1.25rem;
   color: #FFF;
-  padding: 20px;
-  min-width: 300px;
+  padding: 20px 40px;
+  min-width: 200px;
   border: 0px;
   display: inline-block;
   cursor: pointer;
   transition: all 200ms ease-in;
   text-transform: uppercase;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  text-align: center; }
   .north25-btn-primary:focus, .north25-btn-secondary:focus {
     outline: none; }
 
@@ -333,6 +355,13 @@ ul.main-nav {
     right: 60px; }
   .project-slider-controls .thumbs.prev {
     left: 60px; }
+  .project-slider-controls .thumbs img {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: -27px;
+    top: 50%;
+    width: 30px; }
 
 .project-details {
   height: 230px; }
@@ -484,12 +513,31 @@ ul.main-nav {
       height: auto; }
 
 /*---- Partials ------*/
+.page .sticky {
+  display: flex; }
+.page .page-header .heading2 {
+  margin-bottom: 30px; }
+.page .page-header article {
+  padding-top: 240px;
+  padding-bottom: 80px; }
+  .page .page-header article p {
+    margin: 1.875rem 0px; }
+.page .page-image picture {
+  width: 100%;
+  height: 254px;
+  overflow: hidden; }
+.page p {
+  color: #888888; }
+.page .v-line {
+  background: #EAEAEA; }
+
 .header {
   height: 980px;
   width: 100%;
   color: #FFF;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  transition: all .2s linear; }
   .header h3 {
     color: #FFF;
     font-family: 'Helvetica Neue Bold';
@@ -545,6 +593,12 @@ ul.main-nav {
       background: #FFF;
       height: 100%;
       margin: auto; }
+  .header .header-overlay-shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
 
 .middle-banner {
   display: -webkit-box;
@@ -727,7 +781,7 @@ ul.main-nav {
     display: block; }
 
 footer {
-  height: 330px;
+  height: 240px;
   background: #000;
   background-image: url("../image/c.png");
   background-repeat: no-repeat;
@@ -772,24 +826,8 @@ footer {
     color: #7B7B7B; }
     footer a:hover {
       color: #FFF; }
-
-.page .sticky {
-  display: flex; }
-.page .page-header .heading2 {
-  margin-bottom: 30px; }
-.page .page-header article {
-  padding-top: 240px;
-  padding-bottom: 80px; }
-  .page .page-header article p {
-    margin: 1.875rem 0px; }
-.page .page-image picture {
-  width: 100%;
-  height: 254px;
-  overflow: hidden; }
-.page p {
-  color: #888888; }
-.page .v-line {
-  background: #EAEAEA; }
+  footer .v-line {
+    top: 46%; }
 
 /* About North 25 Page */
 .ourvision-label {
@@ -846,24 +884,6 @@ footer {
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   border-left: 1px solid rgba(255, 255, 255, 0.15); }
 
-.page .sticky {
-  display: flex; }
-.page .page-header .heading2 {
-  margin-bottom: 30px; }
-.page .page-header article {
-  padding-top: 240px;
-  padding-bottom: 80px; }
-  .page .page-header article p {
-    margin: 1.875rem 0px; }
-.page .page-image picture {
-  width: 100%;
-  height: 254px;
-  overflow: hidden; }
-.page p {
-  color: #888888; }
-.page .v-line {
-  background: #EAEAEA; }
-
 /* CEO's Message Page */
 #ceo-message-header .quote {
   margin: 0px; }
@@ -900,24 +920,6 @@ footer {
   color: #888888;
   font-size: 1.125rem; }
 
-.page .sticky {
-  display: flex; }
-.page .page-header .heading2 {
-  margin-bottom: 30px; }
-.page .page-header article {
-  padding-top: 240px;
-  padding-bottom: 80px; }
-  .page .page-header article p {
-    margin: 1.875rem 0px; }
-.page .page-image picture {
-  width: 100%;
-  height: 254px;
-  overflow: hidden; }
-.page p {
-  color: #888888; }
-.page .v-line {
-  background: #EAEAEA; }
-
 /* OUr Team Page */
 .page-our-team .team .v-line {
   top: 30%;
@@ -938,24 +940,6 @@ footer {
   margin: 0px;
   color: #000;
   margin-bottom: 30px; }
-
-.page .sticky {
-  display: flex; }
-.page .page-header .heading2 {
-  margin-bottom: 30px; }
-.page .page-header article {
-  padding-top: 240px;
-  padding-bottom: 80px; }
-  .page .page-header article p {
-    margin: 1.875rem 0px; }
-.page .page-image picture {
-  width: 100%;
-  height: 254px;
-  overflow: hidden; }
-.page p {
-  color: #888888; }
-.page .v-line {
-  background: #EAEAEA; }
 
 /* Our Work Page */
 .page .sticky {
@@ -1000,24 +984,6 @@ footer {
   .page-our-services .services-slider-control .slick-disabled {
     opacity: 0.10; }
 
-.page .sticky {
-  display: flex; }
-.page .page-header .heading2 {
-  margin-bottom: 30px; }
-.page .page-header article {
-  padding-top: 240px;
-  padding-bottom: 80px; }
-  .page .page-header article p {
-    margin: 1.875rem 0px; }
-.page .page-image picture {
-  width: 100%;
-  height: 254px;
-  overflow: hidden; }
-.page p {
-  color: #888888; }
-.page .v-line {
-  background: #EAEAEA; }
-
 /* Media Hub Page */
 .page-media-hub .heading2 {
   margin-bottom: 0px !important; }
@@ -1031,12 +997,144 @@ footer {
     padding: 2.1875rem 0px; }
     .page-media-hub .media-articles ul li a {
       color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all .2s ease-in-out; }
+      .page-media-hub .media-articles ul li a:hover {
+        color: #BA8748; }
     .page-media-hub .media-articles ul li .post-title {
       font-size: 3.125rem;
       letter-spacing: -1px; }
     .page-media-hub .media-articles ul li .post-date {
       font-size: 1.125rem; }
+
+.page-contact address {
+  font-size: 1.75rem; }
+
+.page-our-projects .projects {
+  transition: all .2s ease-in-out;
+  /* Project Container */ }
+  .page-our-projects .projects .filters {
+    list-style: none;
+    text-align: center; }
+    .page-our-projects .projects .filters li {
+      display: inline-block;
+      margin: 0px 40px; }
+      .page-our-projects .projects .filters li a {
+        font-size: 1.875rem; }
+        .page-our-projects .projects .filters li a.active {
+          color: #BA8748; }
+  .page-our-projects .projects .project-item {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 460px;
+    margin: 40px 0px;
+    transition: all .2s ease-in-out; }
+    .page-our-projects .projects .project-item picture {
+      position: relative;
+      z-index: 1;
+      overflow-x: hidden;
+      height: auto;
+      display: block; }
+  .page-our-projects .projects .project-item-details {
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px; }
+  .page-our-projects .projects [class*="label-prop-"] {
+    color: #FFF; }
+  .page-our-projects .projects .label-prop-small {
+    font-size: 1.125rem; }
+  .page-our-projects .projects .label-prop-price {
+    font-size: 2.375rem;
+    margin: 0px 10px; }
+  .page-our-projects .projects .label-prop-title {
+    font-size: 5rem;
+    letter-spacing: -1px;
+    margin-bottom: 20px; }
+  .page-our-projects .projects .label-prop-amenities {
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .page-our-projects .projects .label-prop-amenities li {
+      font-size: 1.125rem; }
+
+.page-project-detail .project-amenities {
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+  .page-project-detail .project-amenities li {
+    display: inline-block;
+    font-size: 1.125rem;
+    margin-right: 20px;
+    text-transform: uppercase; }
+.page-project-detail .project-gallery-panel {
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .page-project-detail .project-gallery-panel .project-slider {
+    height: 100vh; }
+    .page-project-detail .project-gallery-panel .project-slider picture {
+      height: 100vh; }
+  .page-project-detail .project-gallery-panel .project-gallery-side-thumb {
+    position: absolute;
+    z-index: 1;
+    background-position: left center;
+    width: 100%;
+    height: 100%; }
+    .page-project-detail .project-gallery-panel .project-gallery-side-thumb > div {
+      opacity: 0.4;
+      width: 100%;
+      height: 100%; }
+    .page-project-detail .project-gallery-panel .project-gallery-side-thumb .zoom-panel {
+      position: absolute;
+      z-index: 2;
+      width: 70px;
+      height: 70px;
+      background: url("../image/zoom.png");
+      top: 50%;
+      margin-top: -35px;
+      left: 50%;
+      margin-left: -35px; }
+.page-project-detail .project-tiny-info-container {
+  padding: 2.5rem;
+  background: #000; }
+  .page-project-detail .project-tiny-info-container .project-tiny-info {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    .page-project-detail .project-tiny-info-container .project-tiny-info li {
+      display: inline-block;
+      padding: 0px 40px;
+      border-right: 1px solid #383838; }
+      .page-project-detail .project-tiny-info-container .project-tiny-info li span {
+        font-size: 1.125rem;
+        color: #BA8748;
+        text-transform: uppercase; }
+      .page-project-detail .project-tiny-info-container .project-tiny-info li h3 {
+        font-size: 3.75rem;
+        color: #FFF; }
+        .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
+          font-size: 1.875rem;
+          color: #FFF;
+          text-transform: lowercase; }
+      .page-project-detail .project-tiny-info-container .project-tiny-info li:last-child {
+        border-right: 0px; }
+.page-project-detail .project-galleries {
+  right: 0px;
+  width: 91.666667%; }
+.page-project-detail .zoom-close {
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background: url("../image/close.png") no-repeat;
+  top: 50%;
+  margin-top: -20px;
+  left: 3%; }
 
 /*----- Overrides ----*/
 .icon-slider .slick-slide > div {

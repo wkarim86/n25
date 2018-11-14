@@ -2,6 +2,7 @@
 body, html{
     padding:0px;
     margin:0px;
+    transition: all .1s ease-in-out;
 }
 
 .north25-container{
@@ -32,12 +33,14 @@ body, html{
 }
 
 a{
+    color:$color-secondary;
     text-decoration:none;
     &:focus{
         outline: none;
     }
     &:hover{
         text-decoration: none;
+        color:$color-primary;
     }
 }
 .svg-defs{ 
@@ -63,4 +66,9 @@ a{
     padding-left:0px;
     padding-top:0px;
     padding-bottom:0px;
+}
+
+.img-responsive{
+    width:100%;
+    height:auto;
 }

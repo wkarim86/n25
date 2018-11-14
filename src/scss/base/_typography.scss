@@ -63,11 +63,28 @@
 }
 
 
+.heading3{
+    @extend %font-helvetica-bold;
+    font-size: pixeltorem(50);
+    color: $color-secondary;
+    letter-spacing: -4px;
+    margin-bottom:30px;
+}
+
+.heading4{
+    @extend %font-helvetica-bold;
+    font-size: pixeltorem(50);
+    color: $color-secondary;
+    letter-spacing: -1px;
+    margin-bottom:30px;
+}
+
+
+
 .heading-white{    
     @extend %font-helvetica-bold;
     font-size: pixeltorem(90);
-    color: $color-white;
-    letter-spacing: -1px;
+    color: $color-white;    
     margin-bottom:30px; 
 }
 
@@ -79,4 +96,8 @@
 
 .degree{
     @extend %font-helvetica-regular;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
 }

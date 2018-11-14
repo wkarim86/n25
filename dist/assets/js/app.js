@@ -24,6 +24,9 @@ $(function(){
 
  
     servicesSlider();
+    headerBanner();
+    filterProjects();
+    sideZoomPanel();
 });
 
 
@@ -45,7 +48,7 @@ function imagetoBackground(){
 
 /* Slider thumbnail */ 
 function setSliderThumb(index){
-     console.log(index);
+    
     var currentSlide = index || 0;
     var nextSlide = currentSlide + 1;
     var prevSlide = currentSlide - 1; 
@@ -134,3 +137,65 @@ window.addEventListener('scroll', function(){
         $('.sticky').removeClass('show');
       }
   })
+
+
+  /* Header Main Banner Animation */
+  function headerBanner(){
+    const url = 'assets/image/header-banners/';
+    let banner_length = 7;
+    let count = 1;
+    let container = $('.header-banner');
+
+    setInterval(function(){
+        container.css('background-image', 'url(' + url + count + '.jpg' + ')' );
+              
+        count++;
+        if(count == banner_length){        
+            count = 1;
+        }
+        
+    },5000);        
+   
+  }
+
+
+  /* Project List filter */
+  function filterProjects(){
+      $('.projects .filters a').on('click', function(){
+          let item = $(this).data("category");         
+
+          $('.projects .filters a').removeClass('active');
+          $(this).addClass('ative');
+          
+          if(item == "all"){             
+            $('.projects .project-loop > div').slideDown();
+          }else{
+              
+              $('.'+item).show();
+            $('.projects .project-loop > div').not('.'+item).hide();
+
+          }
+          
+      })
+  }
+
+
+  /* Project Detail SidePanel */
+  function sideZoomPanel(){
+    $('.zoom-panel').on('click', function(){
+        $('.project-gallery-side-thumb').addClass('d-none');
+        $('.project-gallery-panel').removeClass('col-md-4').addClass('col-md-12');
+        $('.project-galleries').removeClass('d-none');
+        $('.project-slider').slick('setPosition');
+        $('.zoom-close').removeClass('d-none');
+    });
+
+    $('.zoom-close').on('click', function(){
+        $('.project-gallery-side-thumb').removeClass('d-none');
+        $('.project-gallery-panel').removeClass('col-md-12').addClass('col-md-4');
+        $('.project-galleries').addClass('d-none')
+        $('.project-slider').slick('setPosition');
+        $('.zoom-close').addClass('d-none');
+    });
+
+  }
