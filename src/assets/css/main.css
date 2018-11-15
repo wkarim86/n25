@@ -185,6 +185,34 @@ a {
 .text-uppercase {
   text-transform: uppercase; }
 
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .font-140 {
+    font-size: 3.75rem;
+    line-height: 3.75rem; }
+
+  .font-30 {
+    font-size: 1.25rem;
+    line-height: 1.25rem; }
+
+  .font-28 {
+    font-size: 1.125rem;
+    line-height: 1.125rem; }
+
+  .heading2 {
+    font-size: 3.75rem; } }
+@media (min-width: 1024px) {
+  .font-140 {
+    font-size: 5rem;
+    line-height: 5rem; }
+
+  .font-48 {
+    font-size: 2rem;
+    line-height: 2rem; }
+
+  .font-28 {
+    font-size: 1.375rem;
+    line-height: 1.375rem; } }
 /*---- Components --- */
 .north25-btn-primary, .north25-btn-secondary {
   font-size: 1.25rem;
@@ -212,7 +240,8 @@ a {
   background: #000; }
   .north25-btn-secondary:hover {
     border: 1px solid #FFF;
-    background: transparent; }
+    background: transparent;
+    color: #FFF; }
 
 .icon-carousel .icon-slider {
   width: 80vw;
@@ -377,7 +406,7 @@ ul.main-nav {
   margin: 0px 10px; }
 
 .label-prop-title {
-  font-size: 5rem;
+  font-size: 3.125rem;
   letter-spacing: -1px;
   margin-bottom: 20px; }
 
@@ -639,7 +668,8 @@ ul.main-nav {
   background-size: cover;
   width: 100%;
   padding-bottom: 10px;
-  height: 315px; }
+  height: 315px;
+  text-align: center; }
   .mask-bg h3 {
     font-size: 156px;
     line-height: 156px;
@@ -955,6 +985,9 @@ footer {
   margin-bottom: 30px; }
 
 /* Our Work Page */
+.page-our-work .middle-banner {
+  background: #000; }
+
 .page .sticky {
   display: flex; }
 .page .page-header .heading2 {
@@ -1063,7 +1096,7 @@ footer {
     font-size: 2.375rem;
     margin: 0px 10px; }
   .page-our-projects .projects .label-prop-title {
-    font-size: 5rem;
+    font-size: 3.125rem;
     letter-spacing: -1px;
     margin-bottom: 20px; }
   .page-our-projects .projects .label-prop-amenities {

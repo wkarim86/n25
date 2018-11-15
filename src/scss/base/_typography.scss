@@ -101,3 +101,42 @@
 .text-uppercase{
     text-transform: uppercase;
 }
+
+
+/* Media Queries */
+
+@media (min-width:768px) and (max-width:1024px){
+    .font-140{
+        font-size: pixeltorem(60);
+        line-height: pixeltorem(60);
+    }
+    
+    .font-30{
+        font-size: pixeltorem(20);
+        line-height: pixeltorem(20);
+    }
+    .font-28{
+        font-size: pixeltorem(18);
+        line-height: pixeltorem(18);
+    }
+    .heading2{
+        font-size:pixeltorem(60);
+    }
+}
+
+@media (min-width:1024px){
+    .font-140{
+        font-size: pixeltorem(80);
+        line-height: pixeltorem(80);
+    }
+
+    .font-48{
+        font-size: pixeltorem(32);
+        line-height: pixeltorem(32);
+    }
+
+    .font-28{
+        font-size: pixeltorem(22);
+        line-height: pixeltorem(22);
+    }
+}

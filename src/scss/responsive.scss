@@ -16,11 +16,208 @@
     .north25-container {
       max-width: 960px;
     }
+
+
+    .navigation-home{
+      margin-top:30px;
+    }
+
+
   }
   
   @media (min-width: 1200px) {
     .north25-container {
       max-width: 1140px;
+    }
+
+  }
+
+  @media (min-width:767px) and (max-width:1004px){
+    .header{
+      height:auto;
+      
+      h3{
+        letter-spacing: -1px;
+      }
+      .scroll-down{
+        width:40px;
+        height:60px;
+        .arrow{
+          width:40px;
+          height:40px;
+        }
+
+      }
+
+      .service-list {
+        h3{
+          font-size:1.24rem !important;
+        }
+        li{
+          margin-bottom:0px;
+          line-height:24px; 
+        }
+      }
+
+      
+    }
+
+    .middle-banner{
+      height: auto;
+      padding:50px 0px;
+      p{
+        width:80%;
+      }
+      .mask-bg{
+        height:170px;
+        img{
+          width:700px;
+        }
+      }
+
+      .line-top, .line-bottom{
+        height:40px;
+      }
+    }
+
+    .service-icons{
+      li{
+        width:112px;
+        .icon-placeholder{
+          width:112px;
+          height:112px;
+        }
+      }
+    }
+
+    .navigation-home{
+      margin-top:70px;
+    }
+
+    .main-nav{
+      li{
+        a{
+          font-size: 1.0rem !important;
+          padding:0px !important;
+        }
+      }
+   }
+
+   .project-slider{
+
+    .label-prop-price{
+      font-size:1.75rem;
+    }
+    .label-prop-amenities li{
+      font-size:0.875rem !important;
+    }
+    
+  }
+
+  .project-slider-controls .thumbs{
+    width:90px;
+    height:90px;
+    margin-top:-45px;
+    img{
+      width:20px;
+      margin-top:-18px;
+    }
+  }
+  
+
+  .project-slider, picture{
+    height:460px !important;
+
+  }
+}
+
+  @media (min-width:992px) and (max-width:1306px){
+
+    .header{
+      height:auto;
+      .scroll-down{
+        width:40px;
+        margin-top:58px;
+            .arrow{                
+                width: 40px;
+                height: 40px;                
+            }
+      }
+    }
+   
+
+    .middle-banner{
+      height:auto;
+      padding:80px 0px;
+      p{
+        width:80%;
+      }
+      .mask-bg{
+        height:170px;
+        img{
+          width:700px;
+        }
+      }
+
+      .line-top, .line-bottom{
+        height:70px;
+      }
+    }
+
+    .project-slider{
+
+      .label-prop-price{
+        font-size:1.75rem;
+      }
+      .label-prop-amenities li{
+        font-size:0.875rem !important;
+      }
+      
+    }
+
+    .project-slider-controls .thumbs{
+      width:90px;
+      height:90px;
+      margin-top:-45px;
+      img{
+        width:20px;
+        margin-top:-18px;
+      }
+    }
+    
+
+    .project-slider, picture{
+      height:640px !important;
+
+    }
+    
+
+    .main-nav{
+      li{
+        a{
+          font-size: 1.25rem !important;
+        }
+      }
+   }
+
+
+   [class*="north25-btn-"]{
+     font-size:0.875rem !important;
+     padding: 10px 20px;
+   }
+
+
+  }
+
+  /* all normal style media query*/
+  @media (min-width:1366px){
+    .header{
+      height:980px;
+      
+    }
+    .navigation-home{
+      margin-top:130px;
+      
     }
   }
   
