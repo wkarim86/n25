@@ -3,7 +3,7 @@ ul.main-nav li a {
   color: #FFF;
   text-decoration: none; }
 
-.paragrah, .degree, .label-prop-small, .label-prop-amenities li, .footer-navigation a, footer .copyright, footer a, .page-media-hub .media-articles ul li .post-date, .page-contact address, .page-our-projects .projects .label-prop-small, .page-our-projects .projects .label-prop-amenities li, .page-project-detail .project-amenities li, .page-project-detail .project-tiny-info-container .project-tiny-info li span, .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
+.paragrah, .degree, .label-prop-small, .label-prop-subtitle, .label-prop-amenities li, .footer-navigation a, footer .copyright, footer a, .page-media-hub .media-articles ul li .post-date, .page-contact address, .page-our-projects .projects .label-prop-small, .page-our-projects .projects .label-prop-amenities li, .page-project-detail .project-amenities li, .page-project-detail .project-tiny-info-container .project-tiny-info li span, .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
   font-family: "Helvetica Neue"; }
 
 .heading1, .heading2, .heading3, .heading4, .heading-white, .north25-btn-primary, .north25-btn-secondary, .label-prop-price, .label-prop-title, .service-icons li h3, .page-media-hub .media-articles ul li .post-title, .page-contact address strong, .page-contact address b, .page-our-projects .projects .filters li a, .page-our-projects .projects .label-prop-price, .page-our-projects .projects .label-prop-title, .page-project-detail .project-tiny-info-container .project-tiny-info li h3 {
@@ -272,7 +272,7 @@ a {
     border-right: 1px solid #000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    transition: all 5s ease-in-out; }
+    transition: all .2s ease-in-out; }
   .nav .column-2 {
     padding: 20px;
     background: #FFF;
@@ -288,7 +288,7 @@ a {
 
 .sticky {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   top: 100px;
   left: 0px;
   display: none; }
@@ -379,6 +379,10 @@ ul.main-nav {
 .label-prop-title {
   font-size: 5rem;
   letter-spacing: -1px;
+  margin-bottom: 20px; }
+
+.label-prop-subtitle {
+  font-size: 1.375rem;
   margin-bottom: 20px; }
 
 .label-prop-amenities {
@@ -500,17 +504,19 @@ ul.main-nav {
 .avatar {
   position: relative;
   z-index: 2;
-  border: 10px solid #FFF; }
+  border: 10px solid #FFF;
+  border-radius: 100%; }
   .avatar picture {
     padding: 40px;
     border: 3px solid #BA8748;
     background: #FFF;
-    max-width: 360px;
     overflow: hidden;
-    display: block; }
+    display: block;
+    border-radius: 100%; }
     .avatar picture img {
-      width: 100%;
-      height: auto; }
+      width: 300px;
+      height: 300px;
+      clip-path: circle(50% at center); }
 
 /*---- Partials ------*/
 .page .sticky {
@@ -919,6 +925,13 @@ footer {
 .page-ceo-message .message {
   color: #888888;
   font-size: 1.125rem; }
+.page-ceo-message .caption {
+  font-family: 'Helvetica Neue Bold';
+  font-size: 2.5rem;
+  color: #BA8748;
+  background: #FFF;
+  display: block;
+  letter-spacing: -1px; }
 
 /* OUr Team Page */
 .page-our-team .team .v-line {
@@ -1060,81 +1073,108 @@ footer {
     .page-our-projects .projects .label-prop-amenities li {
       font-size: 1.125rem; }
 
-.page-project-detail .project-amenities {
-  list-style: none;
-  padding: 0px;
-  margin: 0px; }
-  .page-project-detail .project-amenities li {
-    display: inline-block;
-    font-size: 1.125rem;
-    margin-right: 20px;
-    text-transform: uppercase; }
-.page-project-detail .project-gallery-panel {
-  right: 0px;
-  top: 0px;
-  height: 100vh;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.9); }
-  .page-project-detail .project-gallery-panel .project-slider {
-    height: 100vh; }
-    .page-project-detail .project-gallery-panel .project-slider picture {
-      height: 100vh; }
-  .page-project-detail .project-gallery-panel .project-gallery-side-thumb {
-    position: absolute;
-    z-index: 1;
-    background-position: left center;
-    width: 100%;
-    height: 100%; }
-    .page-project-detail .project-gallery-panel .project-gallery-side-thumb > div {
-      opacity: 0.4;
-      width: 100%;
-      height: 100%; }
-    .page-project-detail .project-gallery-panel .project-gallery-side-thumb .zoom-panel {
-      position: absolute;
-      z-index: 2;
-      width: 70px;
-      height: 70px;
-      background: url("../image/zoom.png");
-      top: 50%;
-      margin-top: -35px;
-      left: 50%;
-      margin-left: -35px; }
-.page-project-detail .project-tiny-info-container {
-  padding: 2.5rem;
-  background: #000; }
-  .page-project-detail .project-tiny-info-container .project-tiny-info {
+.page-project-detail {
+  /* Footer Overrides */ }
+  .page-project-detail .project-amenities {
     list-style: none;
     padding: 0px;
     margin: 0px; }
-    .page-project-detail .project-tiny-info-container .project-tiny-info li {
+    .page-project-detail .project-amenities li {
       display: inline-block;
-      padding: 0px 40px;
-      border-right: 1px solid #383838; }
-      .page-project-detail .project-tiny-info-container .project-tiny-info li span {
-        font-size: 1.125rem;
-        color: #BA8748;
-        text-transform: uppercase; }
-      .page-project-detail .project-tiny-info-container .project-tiny-info li h3 {
-        font-size: 3.75rem;
-        color: #FFF; }
-        .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
-          font-size: 1.875rem;
-          color: #FFF;
-          text-transform: lowercase; }
-      .page-project-detail .project-tiny-info-container .project-tiny-info li:last-child {
-        border-right: 0px; }
-.page-project-detail .project-galleries {
-  right: 0px;
-  width: 91.666667%; }
-.page-project-detail .zoom-close {
-  position: absolute;
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  background: url("../image/close.png") no-repeat;
-  top: 50%;
-  margin-top: -20px;
-  left: 3%; }
+      font-size: 1.125rem;
+      margin-right: 20px;
+      text-transform: uppercase; }
+  .page-project-detail .project-gallery-panel {
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9); }
+    .page-project-detail .project-gallery-panel .project-slider {
+      height: 100vh; }
+      .page-project-detail .project-gallery-panel .project-slider picture {
+        height: 100vh; }
+    .page-project-detail .project-gallery-panel .project-gallery-side-thumb {
+      position: absolute;
+      z-index: 1;
+      background-position: left center;
+      width: 100%;
+      height: 100%; }
+      .page-project-detail .project-gallery-panel .project-gallery-side-thumb > div {
+        opacity: 0.4;
+        width: 100%;
+        height: 100%; }
+      .page-project-detail .project-gallery-panel .project-gallery-side-thumb .zoom-panel {
+        position: absolute;
+        z-index: 2;
+        width: 70px;
+        height: 70px;
+        background: url("../image/zoom.png");
+        top: 50%;
+        margin-top: -35px;
+        left: 50%;
+        margin-left: -35px; }
+  .page-project-detail .project-tiny-info-container {
+    padding: 2.5rem;
+    background: #000; }
+    .page-project-detail .project-tiny-info-container .project-tiny-info {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .page-project-detail .project-tiny-info-container .project-tiny-info li {
+        display: inline-block;
+        padding: 0px 40px;
+        border-right: 1px solid #383838; }
+        .page-project-detail .project-tiny-info-container .project-tiny-info li span {
+          font-size: 1.125rem;
+          color: #BA8748;
+          text-transform: uppercase; }
+        .page-project-detail .project-tiny-info-container .project-tiny-info li h3 {
+          font-size: 3.75rem;
+          color: #FFF; }
+          .page-project-detail .project-tiny-info-container .project-tiny-info li h3 span {
+            font-size: 1.875rem;
+            color: #FFF;
+            text-transform: lowercase; }
+        .page-project-detail .project-tiny-info-container .project-tiny-info li:last-child {
+          border-right: 0px; }
+  .page-project-detail .project-galleries {
+    right: 0px;
+    width: 91.666667%; }
+  .page-project-detail .zoom-close {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: url("../image/close.png") no-repeat;
+    top: 50%;
+    margin-top: -20px;
+    left: 3%;
+    background-size: cover; }
+  .page-project-detail .project-slider-controls .thumbs {
+    top: auto;
+    bottom: 5%; }
+  .page-project-detail footer {
+    height: 200px;
+    overflow: hidden; }
+    .page-project-detail footer .v-line {
+      background: #414141;
+      top: 34%; }
+    .page-project-detail footer .footer-logo {
+      width: 200px; }
+    .page-project-detail footer .footer-navigation {
+      margin: 20px 0px;
+      padding: 0px;
+      background: none; }
+      .page-project-detail footer .footer-navigation li:first-child {
+        margin-left: 0px; }
+    .page-project-detail footer .copyright {
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      margin: 20px 0px; }
+  .page-project-detail .footer-middle-column {
+    margin-top: 44px; }
 
 /*----- Overrides ----*/
 .icon-slider .slick-slide > div {

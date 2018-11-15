@@ -19,7 +19,7 @@
         border-right:1px solid $color-secondary;
         border-top:1px solid $color-secondary;
         border-bottom:1px solid $color-secondary;
-        transition: all 5s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .column-2{
@@ -48,7 +48,7 @@
 }
 
 .sticky{
-    @include position(fixed,999);
+    @include position(fixed,9999);
     top:100px;
     left:0px;
     display: none;

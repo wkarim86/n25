@@ -1,5 +1,6 @@
 .page-project-detail{
 
+   
     .project-amenities{
         list-style: none;
         padding:0px;
@@ -107,6 +108,49 @@
         top:50%;
         margin-top:-20px;
         left:3%;
+        background-size:cover;
         
+    }
+
+    .project-slider-controls {
+        .thumbs{
+            top:auto;
+            bottom:5%;
+        }
+    }
+
+
+    /* Footer Overrides */
+    footer{
+        height:200px;
+        overflow: hidden;
+
+        .v-line{
+            background:#414141;
+            top:34%;
+        }
+
+        .footer-logo{
+            width:200px;
+        }
+        .footer-navigation{
+            margin:20px 0px;            
+            padding:0px;
+            background:none;
+
+            li:first-child{
+                margin-left:0px;
+            }
+        }
+
+        .copyright{
+            @include position(relative);
+            text-align:left;
+            margin:20px 0px;
+        }
+    }
+
+    .footer-middle-column{
+        margin-top:44px;
     }
 }

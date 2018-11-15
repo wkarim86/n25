@@ -51,4 +51,13 @@
         color:$color-text;
         font-size:pixeltorem(18);
     }
+
+    .caption{
+        font-family: 'Helvetica Neue Bold';
+        font-size:pixeltorem(40);
+        color:$color-primary;        
+        background:$color-white;   
+        display:block;   
+        letter-spacing: -1px;  
+    }
 }

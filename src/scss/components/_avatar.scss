@@ -1,16 +1,20 @@
 .avatar{
     @include position(relative,2);
     border:10px solid $color-white;
+    border-radius:100%;
     picture{
         padding:40px;
         border:3px solid $color-primary;
-        background: $color-white;
-        max-width:360px;
+        background: $color-white;        
         overflow: hidden;
         display: block;
+        border-radius:100%;
         img{
-            width:100%;
-            height:auto;
+            width:300px;
+            height:300px;
+            clip-path: circle(50% at center);
         }
+
+       
     }
 }

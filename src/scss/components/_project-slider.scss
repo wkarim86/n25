@@ -69,6 +69,12 @@
     margin-bottom:20px;
 }
 
+.label-prop-subtitle{
+    @extend %font-helvetica-regular;    
+    font-size:pixeltorem(22);    
+    margin-bottom:20px;    
+}
+
 .label-prop-amenities{
     list-style: none;
     margin:0px;

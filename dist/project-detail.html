@@ -11,12 +11,13 @@
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
         <link href="assets/libs/slick/slick.css" rel="stylesheet" type="text/css">
         <link href="assets/libs/slick/slick-theme.css" rel="stylesheet" type="text/css">
+        <script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>
 
     </head>
     <body>
 
     <!-- Page Layout -->
-<div class="page">
+<div class="page page-project-detail">
 
         <!-- Mobile Navigation -->
         <nav class="nav sticky">
@@ -26,15 +27,16 @@
                     </a>
                     <div class="mobile-navigation">
                             <ul class="main-nav">
-                                    <li><a href="#">Who We Are</a></li>
+                                    <li><a href="about-north25.html">Who We Are</a></li>
                                     <li><a href="#">What We Do</a>
                                         <ul class="sub-menu">
-                                                <li><a href="#" class="font-20">Our work</a> <span>&#9656;</span></li>
-                                                <li><a href="#" class="font-20">Our services</a><span>&#9656;</span></li>
+                                                <li><a href="our-work.html" class="font-20">Our work</a> <span>&#9656;</span></li>
+                                                <li><a href="our-services.html" class="font-20">Our services</a><span>&#9656;</span></li>
                                             </ul>
                                     </li>
-                                    <li><a href="#">Our Projects</a></li>
-                                    <li><a href="#">Media Hub</a></li>
+                                    <li><a href="projects.html">Our Projects</a></li>
+                                    <li><a href="media-hub.html">Media Hub</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                     </div>
                     
@@ -47,232 +49,270 @@
             
         </nav>
 
-<div class="page-project-detail">
-
-    <!-- Project Slider -->
+            <!-- Project Slider -->
     <div class="position-fixed  project-gallery-panel no-padding col-md-4">
-            <a href="javascript:void(0);" class="zoom-close d-none"></a>
-        <div class="project-gallery-side-thumb">
-            <a href="javascript:void(0);" class="zoom-panel"></a>
-            <div>
-                <img src="assets/image/dubai-cruise-terminal-thumb.jpg" class="img2bg">
-            </div>
-            
-            
+        <a href="javascript:void(0);" class="zoom-close d-none"></a>
+    <div class="project-gallery-side-thumb">
+        <a href="javascript:void(0);" class="zoom-panel"></a>
+        <div>
+            <img src="assets/image/dubai-cruise-terminal-thumb.jpg" class="img2bg">
         </div>
+        
+        
+    </div>
 
-        <!-- Gallery Slider -->
-            <section class="project-galleries position-absolute d-none">
-                    <div class="project-slider">
-                     <picture class="bgcover">                
-                         <img src="assets/image/jumeirah-bay.jpg" class="img2bg">
-                         <div class="project-details dark-shade d-flex align-items-center">
+    <!-- Gallery Slider -->
+        <section class="project-galleries position-absolute d-none">
+                <div class="project-slider">
+                 <picture class="bgcover">                
+                     <img src="assets/image/jumeirah-bay.jpg" class="img2bg">
+                     <div class="project-details dark-shade d-flex align-items-center">
+                         <div class="col">
+                                 <div class="row justify-content-center">                                    
+                                        
+                                         <div class="col-md-4">
+                                             <h3 class="label-prop-title text-center text-truncate">Dubai Harbour</h3> 
+                                             <span class="d-block text-center label-prop-subtitle">View of the Cruise Terminal</span>                                        
+                                         </div>
+                                         
+                                        
+                                     </div>
+                         </div>
+    
+                     </div>
+                 </picture> 
+                 <picture class="bgcover">
+                     <img src="assets/image/box-park.jpg" class="img2bg">v 
+                 
+                     <div class="project-details dark-shade d-flex align-items-center">
                              <div class="col">
-                                     <div class="row justify-content-center">                                    
+                                     <div class="row justify-content-center">
                                             
+                                           
                                              <div class="col-md-4">
-                                                 <h3 class="label-prop-title text-center text-truncate">Dubai Harbour</h3> 
-                                                 <span>View of the Cruise Terminal</span>                                        
+                                                 <h3 class="label-prop-title text-center text-truncate">Box Park</h3>
+                                                 <span class="d-block text-center label-prop-subtitle">View of the Cruise Terminal</span>
+                                                 
                                              </div>
-                                             
-                                            
+                                          
                                          </div>
                              </div>
-        
+     
                          </div>
-                     </picture> 
-                     <picture class="bgcover">
-                         <img src="assets/image/box-park.jpg" class="img2bg">v 
-                     
-                         <div class="project-details dark-shade d-flex align-items-center">
-                                 <div class="col">
-                                         <div class="row justify-content-center">
-                                                
-                                               
-                                                 <div class="col-md-4">
-                                                     <h3 class="label-prop-title text-center text-truncate">Box Park</h3>
-                                                     
-                                                 </div>
-                                              
-                                             </div>
-                                 </div>
-         
-                             </div>
-                     </picture> 
-        
-                    </div>
-        
-                    <div class="project-slider-controls">                                      
-                        <div class="thumbs prev"><img src="assets/image/prev.png" class="img-fluid" /></div>
-                        <div class="thumbs next"><img src="assets/image/next.png" class="img-fluid" /></div>
-                    </div>
-             </section>
-    </div>
+                 </picture> 
     
-
-    <div class="col-md-8 no-padding">
-    <!--Page Header Section-->
-    <section class="page-header">
-
-        <div class="row no-gutters">
-            <div class="col"></div>
-            <div class="col-md-10">
-                    <article>
-                            <h3 class="heading2">Project Detail</h3>  
-                            <ul class="project-amenities">
-                                <li>Retail</li>
-                                <li>Food & Beverage</li>
-                                <li>Hospitality</li>
-                                <li>Residential</li>
-                                <li>Marina</li>
-                                <li>Cruiseship Terminal</li>
-                            </ul>
-                            <div class="row">                    
-                                <div class="col-10">
-                                    <p>
-                                       Dubai Harbour will include commercial, residential, transport and community facility land uses. Shamal envisions the Dubai Harbour to be an iconic and innovative waterfront development that will positively contribute to Dubai’s maritime and tourism sector with its world class marina and cruise terminal..
-                                    </p>                
-            
-                                    <p>
-                                            This development will be located along King Salman bin Abdulaziz Al Saud street, between JBR and Palm Jumeirah and will provide connections to nearby attractions including Skydive Dubai, Dubai International Marine Club and Dubai Marina via new transport connections. 
-                                    </p>
-            
-                                    <p>
-                                        <a href="#" class="north25-btn-primary">Visit Site</a>
-                                    </p>
-            
-                                </div>                    
-                            </div>
-            
-            
-                            
-                            
-                                    
-                        </article>
-            </div>
-            <div class="col"></div>
-        </div>
-           
-                
-        </section>
-
-         <!-- site information -->
-         <div class="project-tiny-info-container">
-                <div class="row  no-gutters">
-                    <div class="col"></div>
-                    <div class="col-md-10">
-                        <ul class="project-tiny-info">
-                                <li>
-                                    <span>Site Area</span>
-                                    <h3>1,069,682<span>sqm</span></h3>
-                                </li>
-                                <li>
-                                    <span>Yacht Capacity</span>
-                                    <h3>1,072+</h3>
-                                </li>
-                                <li>
-                                    <span>Completion</span>
-                                    <h3>2020</h3>
-                                </li>
-                            </ul>
-                    </div>
-                    <div class="col"></div>   
-                   
                 </div>
-            </div>
     
-        <div class="spacer-8"></div>
+                <div class="project-slider-controls">                                      
+                    <div class="thumbs prev"><img src="assets/image/prev.png" class="img-fluid" /></div>
+                    <div class="thumbs next"><img src="assets/image/next.png" class="img-fluid" /></div>
+                </div>
+         </section>
+</div>
 
 
-        <!-- Othe content -->
-            <div class="row">
+<div class="col-md-8 no-padding">
+<!--Page Header Section-->
+<section class="page-header">
+
+    <div class="row no-gutters">
+        <div class="col"></div>
+        <div class="col-md-10">
+                <article>
+                        <h3 class="heading2">Project Detail</h3>  
+                        <ul class="project-amenities">
+                            <li>Retail</li>
+                            <li>Food & Beverage</li>
+                            <li>Hospitality</li>
+                            <li>Residential</li>
+                            <li>Marina</li>
+                            <li>Cruiseship Terminal</li>
+                        </ul>
+                        <div class="row">                    
+                            <div class="col-10">
+                                <p>
+                                   Dubai Harbour will include commercial, residential, transport and community facility land uses. Shamal envisions the Dubai Harbour to be an iconic and innovative waterfront development that will positively contribute to Dubai’s maritime and tourism sector with its world class marina and cruise terminal..
+                                </p>                
+        
+                                <p>
+                                        This development will be located along King Salman bin Abdulaziz Al Saud street, between JBR and Palm Jumeirah and will provide connections to nearby attractions including Skydive Dubai, Dubai International Marine Club and Dubai Marina via new transport connections. 
+                                </p>
+        
+                                <p>
+                                    <a href="#" class="north25-btn-primary">Visit Site</a>
+                                </p>
+        
+                            </div>                    
+                        </div>
+        
+        
+                        
+                        
+                                
+                    </article>
+        </div>
+        <div class="col"></div>
+    </div>
+       
+            
+    </section>
+
+     <!-- site information -->
+     <div class="project-tiny-info-container">
+            <div class="row  no-gutters">
                 <div class="col"></div>
                 <div class="col-md-10">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="assets/image/location.jpg" class="img-fluid">
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Location</h2>
+                    <ul class="project-tiny-info">
+                            <li>
+                                <span>Site Area</span>
+                                <h3>1,069,682<span>sqm</span></h3>
+                            </li>
+                            <li>
+                                <span>Yacht Capacity</span>
+                                <h3>1,072+</h3>
+                            </li>
+                            <li>
+                                <span>Completion</span>
+                                <h3>2020</h3>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col"></div>   
+               
+            </div>
+        </div>
+
+    <div class="spacer-8"></div>
+
+
+    <!-- Othe content -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-10">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/image/location.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Location</h2>
+                        <p>
+                                Located between the Palm Jumeirah and the shores of the Jumierah Area, Dubai Harbour is primed to become the new “it” development in Dubai. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="spacer-5"></div>
+
+                <div class="row">                           
+                        <div class="col-md-12">
+                            <h2>Site Layout</h2>
                             <p>
-                                    Located between the Palm Jumeirah and the shores of the Jumierah Area, Dubai Harbour is primed to become the new “it” development in Dubai. 
+                                    The Dubai Harbour Master Plan brings together a series of unique character zones into an overall vision making it a distinctive landmark destination to compete with developments in its immediate surrounding. A series of seven distinct zones are proposed to bring together the overall vision of the development. Each area has its own character and activities. The uses identified relate to each zone’s unique attributes.
+                            </p>
+                            <div class="spacer-2"></div>
+                            <p>
+                                <img src="assets/image/site-layout.jpg" class="img-responsive">
                             </p>
                         </div>
                     </div>
 
                     <div class="spacer-5"></div>
 
-                    <div class="row">                           
-                            <div class="col-md-12">
-                                <h2>Site Layout</h2>
-                                <p>
-                                        The Dubai Harbour Master Plan brings together a series of unique character zones into an overall vision making it a distinctive landmark destination to compete with developments in its immediate surrounding. A series of seven distinct zones are proposed to bring together the overall vision of the development. Each area has its own character and activities. The uses identified relate to each zone’s unique attributes.
-                                </p>
-                                <div class="spacer-2"></div>
-                                <p>
-                                    <img src="assets/image/site-layout.jpg" class="img-responsive">
-                                </p>
+                    <div class="row align-items-center justify-content-between">                           
+                            <div>
+                                <span class="text-uppercase">Next Project</span>
+                                <h2 class="heading4">Jumierah Bay</h2>                                   
                             </div>
+                            <div ><a href="javascript:void(0);"><img src="assets/image/post-next.png"></a></div>
                         </div>
+               
 
-                        <div class="spacer-5"></div>
-
-                        <div class="row align-items-center justify-content-between">                           
-                                <div>
-                                    <span class="text-uppercase">Next Project</span>
-                                    <h2 class="heading4">Jumierah Bay</h2>                                   
-                                </div>
-                                <div ><a href="javascript:void(0);"><img src="assets/image/post-next.png"></a></div>
-                            </div>
-                   
-
-                </div>
-                <div class="col"></div>
             </div>
-
-
-    </div>
-      
+            <div class="col"></div>
+        </div>
 
 
 </div>
 
 <div class="spacer-8"></div>
+ <!-- footer -->
+ <footer class="d-flex align-items-center position-relative col-md-8">
+        <div class="v-line"></div>
+        <div class="north25-container align-items-center"> 
 
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10 d-flex flex-column footer-middle-column">
+                        <div class="row no-gutters justify-content-between">
+                                <div>
+                                        <a href="#" class="footer-logo"><img src="assets/image/logo-footer.svg" class="img-fluid"></a>
+                                </div>
+                                <div>
+                                        <ul class="social-links">
+                                            <ul class="social-icons">
+                                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>                        
+                                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                
+                                            </ul>
+                                        </ul>    
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col">
+                                        <ul class="footer-navigation">
+                                                <li><a href="javascript:void(0);">Who We Are</a></li>
+                                                <li><a href="javascript:void(0);">What We Do</a></li>
+                                                <li><a href="javascript:void(0);">Our Projects</a></li>
+                                                <li><a href="javascript:void(0);">Media Hub</a></li>
+                                                <li><a href="javascript:void(0);">Contact</a></li>
+                                            </ul>
+                            
+                                </div>
+                            </div>
+                            <div class="copyright">© 2018 North25. All rights reserved.  |  <a href="#">Terms of use</a>  |  <a href="#">Privacy policy</a></div>
+                </div>
+                <div class="col"></div>
+            </div>
+            
+                                     
+            </div>    
+           
+    </footer>
+<script>
+    
+    // $(function(){
+    //     $(window).on('scroll',function(){            
+
+    //         var scrollPos = (($(this).scrollTop() + $(this).outerHeight()) ) - $('footer').height();            
+    //         var newHeight = (($('.project-gallery-panel').height() - $('footer').height()) / window.outerHeight) * 100;
+    //         newHeight = newHeight + 5;
+            
+    //         if(scrollPos >= $('footer').offset().top){
+    //             if(!$('.project-gallery-panel').hasClass('scrolled')){
+    //                 $('.project-gallery-panel').css('height', newHeight + 'vh');
+    //                 $('.project-gallery-panel').addClass('scrolled');
+    //             }
+                
+    //             console.log('inside true');
+    //         }else{
+    //             $('.project-gallery-panel').removeAttr('style');
+    //             $('.project-gallery-panel').removeClass('scrolled');
+    //             console.log('inside false');
+    //         }
+    //     })
+    // })
+</script>
 
 </div><!-- Page end -->
 
-    <!-- footer -->
-    <footer class="d-flex align-items-center relative">
-        <div class="v-line"></div>
-        <div class="north25-container d-flex justify-content-between align-items-center">   
-            
-                <a href="#" class="footer-logo"><img src="assets/image/logo.png" class="img-fluid"></a>
-
-                <ul class="footer-navigation">
-                    <li><a href="javascript:void(0);">Who We Are</a></li>
-                    <li><a href="javascript:void(0);">What We Do</a></li>
-                    <li><a href="javascript:void(0);">Our Projects</a></li>
-                    <li><a href="javascript:void(0);">Media Hub</a></li>
-                    <li><a href="javascript:void(0);">Contact</a></li>
-                </ul>
-
-                <ul class="social-links">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>                        
-                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        
-                    </ul>
-                </ul>               
-            </div>    
-            <div class="copyright">© 2018 North25. All rights reserved.  |  <a href="#">Terms of use</a>  |  <a href="#">Privacy policy</a></div>
-    </footer>
+   
    
       
 
     <!-- Jquery and Bootstrap -->
-        <script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>
+       
         <script src="assets/libs/slick/slick.js"></script>
         <script src="assets/js/bootstrap.js"></script>
         <script src="assets/js/app.js"></script>
